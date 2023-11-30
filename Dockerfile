@@ -1,7 +1,7 @@
 FROM node:20 AS build
 WORKDIR /app
 COPY . .
-RUN rm package-lock.json
+# RUN rm package-lock.json
 RUN set -x \
     && npm install
 RUN set -x \
