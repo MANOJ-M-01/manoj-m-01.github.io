@@ -11,6 +11,6 @@ run `npm run deploy`
 
 # Docker
 
-- docker build -t my-app .
-- docker run -p 3000:80 my-app
-- docker run -p 5173:5173 my-app
+- docker build -t manoj-portfolio .
+- docker run --name manoj-portfolio -p 3000:80 manoj-portfolio 
+- docker run -p 5173:5173 manoj-portfolio
