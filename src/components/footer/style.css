@@ -1,0 +1,45 @@
+footer {
+  background-color: #f7f5f2;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  padding: 0 100px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #000;
+  font-size: 18px;
+  padding: 8px;
+  font-family: "Ysabeau SC";
+  line-height: 1.3em;
+  font-weight: 400;
+}
+
+.copyright a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1440px) {
+  .footer-bottom {
+    padding: 0 7%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-bottom {
+    padding: 0 20px;
+  }
+}
