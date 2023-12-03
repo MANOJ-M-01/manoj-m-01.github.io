@@ -82,7 +82,7 @@ body {
   background-position: 0 0; */
   color: #fff;
   font-size: 16px;
-  background: #14181c url("images/bg.webp") 0 -1px repeat-x;
+  background: #14181c url("/images/bg.webp") 0 -1px repeat-x;
   padding: 0;
   margin: 0;
 }

@@ -6,7 +6,7 @@
 .backdrop-content {
   background-position: center 0px;
   background-image: url("https://a.ltrbxd.com/resized/sm/upload/23/si/yq/9l/count%20of%20monte%20cristo-1200-1200-675-675-crop-000000.jpg?v=8b60ab4e5e");
-  background-image: url("images/banner-bg.jpg");
+  background-image: url("/images/banner-bg.jpg");
   transition: opacity .75s cubic-bezier(.165,.84,.44,1);
   background-repeat: no-repeat;
   background-size: 100% 100%;
