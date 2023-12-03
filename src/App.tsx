@@ -1,11 +1,20 @@
-
+import './app.css'
+import { Banner, Footer, Headline } from './components'
 
 function App() {
 
   return (
-    <div>
-      <h1>Manoj M</h1>
-    </div>
+    <>
+      <Banner />
+      <Headline />
+      <div className='grid2'>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <Footer />
+    </>
   )
 }
 
