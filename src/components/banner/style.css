@@ -3,11 +3,12 @@
   height: 100vh;
   cursor: context-menu;
 }
+
 .backdrop-content {
   background-position: center 0px;
   background-image: url("https://a.ltrbxd.com/resized/sm/upload/23/si/yq/9l/count%20of%20monte%20cristo-1200-1200-675-675-crop-000000.jpg?v=8b60ab4e5e");
   background-image: url("/images/banner-bg.jpg");
-  transition: opacity .75s cubic-bezier(.165,.84,.44,1);
+  transition: opacity .75s cubic-bezier(.165, .84, .44, 1);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: absolute;
@@ -24,8 +25,7 @@
 }
 
 .backdrop-content:before {
-  background-image: linear-gradient(
-      90deg,
+  background-image: linear-gradient(90deg,
       #14181d 0,
       rgba(20, 24, 29, 0.986) 0.97%,
       rgba(20, 24, 29, 0.945) 2.07833333%,
@@ -55,10 +55,8 @@
       rgba(20, 24, 29, 0.883) 96.70333333%,
       rgba(20, 24, 29, 0.945) 97.92166667%,
       rgba(20, 24, 29, 0.986) 99.03%,
-      #14181d
-    ),
-    linear-gradient(
-      0deg,
+      #14181d),
+    linear-gradient(0deg,
       #14181d 0,
       #14181d 21.48148148%,
       rgba(20, 24, 29, 0.986) 23.63703704%,
@@ -74,14 +72,13 @@
       rgba(20, 24, 29, 0.122) 52.5%,
       rgba(20, 24, 29, 0.059) 54.85185185%,
       rgba(20, 24, 29, 0.016) 56.87777778%,
-      rgba(20, 24, 29, 0) 58.51851852%
-    );
+      rgba(20, 24, 29, 0) 58.51851852%);
   background-repeat: no-repeat;
-  content: ""; 
-  height: 100%; 
+  content: "";
+  height: 100%;
   pointer-events: none;
-  position: absolute; 
-  width: 100%; 
+  position: absolute;
+  width: 100%;
 }
 
 .backdrop-content h1 {
@@ -94,3 +91,16 @@
   line-height: 1.3em;
 }
 
+@media (max-width: 680px) {
+  .backdrop-content h1 {
+    font-size: 4em;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    margin: 0;
+    padding: 10px;
+  }
+}

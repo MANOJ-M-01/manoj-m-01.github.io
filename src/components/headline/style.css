@@ -10,12 +10,17 @@
   border-right: 1px solid black;
   border-bottom: 3px solid black;
 }
+
 @media (max-width: 1024px) {
-  .grid { grid-template-columns: repeat(1, 1fr); }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
+
 .grid div {
   border-right: 3px solid black;
 }
+
 .sdsd {
   display: flex;
   flex-direction: column;
@@ -23,12 +28,14 @@
   align-items: center;
   padding: 30px;
 }
+
 .sdsd h3 {
   font-family: "Courier New", Courier, monospace;
   color: #000;
   font-weight: 900;
   font-size: 28px;
 }
+
 .sdsd button {
   font-size: 20px;
   background: #000;
@@ -36,10 +43,12 @@
   padding: 8px;
   border: 1px solid #000;
 }
+
 .sdsd button:hover {
   background: #ffff;
   color: #000;
 }
+
 .sdsd p {
   font-size: 18px;
   color: #000;
@@ -56,4 +65,14 @@
   line-height: 1.3em;
   text-align: justify;
   color: #3d3b3b;
+}
+
+@media (max-width: 480px) {
+  .sdsd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
 }
