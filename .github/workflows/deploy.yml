@@ -1,0 +1,31 @@
+name: Portfolio Update
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+  push:
+    branches:
+      - main
+  pull_request_target:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup@nodev1
+        with:
+          node-version: 20
+      - run: npm install
+      - run: npm test
+      - run: npm run build
+      - run: |
+          if [ "${{ github.event_name }}" == "push" ] || \
+             [ "${{ github.event_name }}" == "pull_request_target" ]; then
+            npm run deploy
+          fi
